@@ -1,0 +1,14 @@
+
+{
+  "name": "blockcraft-launcher",
+  "version": "0.1.0",
+  "description": "Launcher independiente para Minecraft",
+  "main": "desktop/main.js",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check desktop/main.js"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}

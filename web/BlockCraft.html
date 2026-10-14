@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101419" />
+
+  <title>Blockcraft Launcher</title>
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <a href="#inicio" class="brand">
+        <span class="brand-icon">B</span>
+        <span>BLOCKCRAFT</span>
+      </a>
+
+      <nav class="navigation" aria-label="Principal">
+        <a href="#inicio" class="nav-link active">
+          Inicio
+        </a>
+        <a href="#ediciones" class="nav-link">
+          Ediciones
+        </a>
+        <a href="#descargar" class="nav-link">
+          Descargar
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span class="status-dot"></span>
+        Launcher v0.1 Beta
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <span class="topbar-label">
+          BLOCKCRAFT LAUNCHER
+        </span>
+        <span class="platform" id="platform">
+          Detectando dispositivo...
+        </span>
+      </header>
+
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <span class="eyebrow">
+            TU AVENTURA COMIENZA AQUÍ
+          </span>
+
+          <h1>
+            UN MUNDO.
+            <span>INFINITAS AVENTURAS.</span>
+          </h1>
+
+          <p>
+            Explora Minecraft Java y Bedrock
+            desde una experiencia diseñada
+            especialmente para PC.
+          </p>
+
+          <a href="#ediciones" class="btn btn-primary">
+            EXPLORAR EDICIONES
+          </a>
+        </div>
+      </section>
+
+      <section id="ediciones" class="section">
+        <div class="section-heading">
+          <span class="eyebrow">BIBLIOTECA</span>
+          <h2>Selecciona tu edición</h2>
+          <p>
+            Descubre las opciones disponibles
+            para tu dispositivo.
+          </p>
+        </div>
+
+        <div class="edition-grid">
+
+          <article class="edition-card">
+            <div class="edition-art java-art">
+              <span>JAVA</span>
+            </div>
+
+            <div class="edition-content">
+              <span class="edition-tag">PC</span>
+              <h3>Minecraft Java Edition</h3>
+              <p>
+                La experiencia clásica para
+                computadoras Windows, Linux y macOS.
+              </p>
+
+              <button
+                class="btn btn-primary"
+                id="java-button"
+                type="button">
+                VER VERSIONES
+              </button>
+            </div>
+          </article>
+
+          <article class="edition-card">
+            <div class="edition-art bedrock-art">
+              <span>BEDROCK</span>
+            </div>
+
+            <div class="edition-content">
+              <span class="edition-tag">MULTIPLATAFORMA</span>
+              <h3>Minecraft Bedrock Edition</h3>
+              <p>
+                Juega en Windows y dispositivos
+                móviles mediante las tiendas oficiales.
+              </p>
+
+              <a
+                class="btn btn-secondary"
+                id="bedrock-button"
+                href="https://www.minecraft.net/store/minecraft-deluxe-collection-pc"
+                target="_blank"
+                rel="noopener noreferrer">
+                OBTENER BEDROCK
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="descargar" class="section">
+        <div class="download-panel">
+          <span class="eyebrow">PARA WINDOWS</span>
+          <h2>Tu aventura, desde tu escritorio.</h2>
+          <p id="download-description">
+            Blockcraft Launcher para PC
+            está en desarrollo.
+          </p>
+
+          <button
+            id="download-button"
+            class="btn btn-primary"
+            type="button"
+            disabled>
+            PRÓXIMAMENTE
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Blockcraft Launcher es un proyecto
+          independiente, no afiliado a Mojang
+          ni a Microsoft.
+        </p>
+      </footer>
+
+    </main>
+  </div>
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite">
+  </div>
+</body>
+</html>
